@@ -9,11 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+ 
+    
+    @IBAction func Start(_ sender: Any) {
+        self.performSegue(withIdentifier: "MapSegue", sender: nil)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+            }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -22,4 +28,3 @@ class ViewController: UIViewController {
 
 
 }
-

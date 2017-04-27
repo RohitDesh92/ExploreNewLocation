@@ -15,6 +15,10 @@
 		F99EB7F51EB050C600F299AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99EB7F31EB050C600F299AE /* LaunchScreen.storyboard */; };
 		F99EB8001EB050C800F299AE /* MyFavouriteSpotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99EB7FF1EB050C800F299AE /* MyFavouriteSpotTests.swift */; };
 		F99EB80B1EB050C900F299AE /* MyFavouriteSpotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99EB80A1EB050C900F299AE /* MyFavouriteSpotUITests.swift */; };
+		F99EB81B1EB05C9900F299AE /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99EB81A1EB05C9900F299AE /* MapController.swift */; };
+		F99EB81D1EB0615400F299AE /* Vacations.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F99EB81C1EB0615400F299AE /* Vacations.jpg */; };
+		F99EB8201EB0662100F299AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99EB81F1EB0662100F299AE /* MapKit.framework */; };
+		F99EB8221EB18D3400F299AE /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99EB8211EB18D3400F299AE /* ListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		F99EB8061EB050C900F299AE /* MyFavouriteSpotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFavouriteSpotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99EB80A1EB050C900F299AE /* MyFavouriteSpotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavouriteSpotUITests.swift; sourceTree = "<group>"; };
 		F99EB80C1EB050C900F299AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F99EB81A1EB05C9900F299AE /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		F99EB81C1EB0615400F299AE /* Vacations.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vacations.jpg; sourceTree = "<group>"; };
+		F99EB81F1EB0662100F299AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F99EB8211EB18D3400F299AE /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99EB8201EB0662100F299AE /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +92,7 @@
 				F99EB7FE1EB050C800F299AE /* MyFavouriteSpotTests */,
 				F99EB8091EB050C900F299AE /* MyFavouriteSpotUITests */,
 				F99EB7E51EB050C400F299AE /* Products */,
+				F99EB81E1EB0662100F299AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +112,9 @@
 				F99EB7E71EB050C500F299AE /* AppDelegate.swift */,
 				F99EB7E91EB050C500F299AE /* ViewController.swift */,
 				F99EB7EB1EB050C500F299AE /* Main.storyboard */,
+				F99EB8211EB18D3400F299AE /* ListController.swift */,
+				F99EB81C1EB0615400F299AE /* Vacations.jpg */,
+				F99EB81A1EB05C9900F299AE /* MapController.swift */,
 				F99EB7F11EB050C600F299AE /* Assets.xcassets */,
 				F99EB7F31EB050C600F299AE /* LaunchScreen.storyboard */,
 				F99EB7F61EB050C600F299AE /* Info.plist */,
@@ -126,6 +139,14 @@
 				F99EB80C1EB050C900F299AE /* Info.plist */,
 			);
 			path = MyFavouriteSpotUITests;
+			sourceTree = "<group>";
+		};
+		F99EB81E1EB0662100F299AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F99EB81F1EB0662100F299AE /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +217,13 @@
 				TargetAttributes = {
 					F99EB7E31EB050C400F299AE = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VUP959QSDD;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					F99EB7FA1EB050C800F299AE = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -235,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99EB81D1EB0615400F299AE /* Vacations.jpg in Resources */,
 				F99EB7F51EB050C600F299AE /* LaunchScreen.storyboard in Resources */,
 				F99EB7F21EB050C600F299AE /* Assets.xcassets in Resources */,
 				F99EB7ED1EB050C500F299AE /* Main.storyboard in Resources */,
@@ -262,6 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99EB81B1EB05C9900F299AE /* MapController.swift in Sources */,
+				F99EB8221EB18D3400F299AE /* ListController.swift in Sources */,
 				F99EB7F01EB050C600F299AE /* MyFavouriteSpot.xcdatamodeld in Sources */,
 				F99EB7EA1EB050C500F299AE /* ViewController.swift in Sources */,
 				F99EB7E81EB050C500F299AE /* AppDelegate.swift in Sources */,
@@ -418,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VUP959QSDD;
 				INFOPLIST_FILE = MyFavouriteSpot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sjsu.edu.MyFavouriteSpot;
@@ -430,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VUP959QSDD;
 				INFOPLIST_FILE = MyFavouriteSpot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sjsu.edu.MyFavouriteSpot;
