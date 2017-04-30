@@ -19,6 +19,8 @@
 		F99EB81D1EB0615400F299AE /* Vacations.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F99EB81C1EB0615400F299AE /* Vacations.jpg */; };
 		F99EB8201EB0662100F299AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99EB81F1EB0662100F299AE /* MapKit.framework */; };
 		F99EB8221EB18D3400F299AE /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99EB8211EB18D3400F299AE /* ListController.swift */; };
+		F99EB8261EB19CDD00F299AE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99EB8251EB19CDC00F299AE /* CoreLocation.framework */; };
+		F9CC88BD1EB5166500904772 /* SpotPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC88BC1EB5166500904772 /* SpotPin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		F99EB81C1EB0615400F299AE /* Vacations.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vacations.jpg; sourceTree = "<group>"; };
 		F99EB81F1EB0662100F299AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F99EB8211EB18D3400F299AE /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		F99EB8251EB19CDC00F299AE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F9CC88BC1EB5166500904772 /* SpotPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotPin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99EB8261EB19CDD00F299AE /* CoreLocation.framework in Frameworks */,
 				F99EB8201EB0662100F299AE /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +124,7 @@
 				F99EB7F31EB050C600F299AE /* LaunchScreen.storyboard */,
 				F99EB7F61EB050C600F299AE /* Info.plist */,
 				F99EB7EE1EB050C600F299AE /* MyFavouriteSpot.xcdatamodeld */,
+				F9CC88BC1EB5166500904772 /* SpotPin.swift */,
 			);
 			path = MyFavouriteSpot;
 			sourceTree = "<group>";
@@ -144,6 +150,7 @@
 		F99EB81E1EB0662100F299AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F99EB8251EB19CDC00F299AE /* CoreLocation.framework */,
 				F99EB81F1EB0662100F299AE /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -295,6 +302,7 @@
 				F99EB7F01EB050C600F299AE /* MyFavouriteSpot.xcdatamodeld in Sources */,
 				F99EB7EA1EB050C500F299AE /* ViewController.swift in Sources */,
 				F99EB7E81EB050C500F299AE /* AppDelegate.swift in Sources */,
+				F9CC88BD1EB5166500904772 /* SpotPin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +551,7 @@
 				F99EB8111EB050C900F299AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F99EB8121EB050C900F299AE /* Build configuration list for PBXNativeTarget "MyFavouriteSpotTests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +560,7 @@
 				F99EB8141EB050C900F299AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F99EB8151EB050C900F299AE /* Build configuration list for PBXNativeTarget "MyFavouriteSpotUITests" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +569,7 @@
 				F99EB8171EB050C900F299AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
