@@ -20,6 +20,7 @@
 		F99EB8201EB0662100F299AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99EB81F1EB0662100F299AE /* MapKit.framework */; };
 		F99EB8221EB18D3400F299AE /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99EB8211EB18D3400F299AE /* ListController.swift */; };
 		F99EB8261EB19CDD00F299AE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99EB8251EB19CDC00F299AE /* CoreLocation.framework */; };
+		F9A8BCAD1ECFC29F0091600E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A8BCAC1ECFC29E0091600E /* CoreDataManager.swift */; };
 		F9CC88BD1EB5166500904772 /* SpotPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC88BC1EB5166500904772 /* SpotPin.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		F99EB81F1EB0662100F299AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F99EB8211EB18D3400F299AE /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		F99EB8251EB19CDC00F299AE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F9A8BCAC1ECFC29E0091600E /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		F9CC88BC1EB5166500904772 /* SpotPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotPin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +122,7 @@
 				F99EB8211EB18D3400F299AE /* ListController.swift */,
 				F99EB81C1EB0615400F299AE /* Vacations.jpg */,
 				F99EB81A1EB05C9900F299AE /* MapController.swift */,
+				F9A8BCAC1ECFC29E0091600E /* CoreDataManager.swift */,
 				F99EB7F11EB050C600F299AE /* Assets.xcassets */,
 				F99EB7F31EB050C600F299AE /* LaunchScreen.storyboard */,
 				F99EB7F61EB050C600F299AE /* Info.plist */,
@@ -302,6 +305,7 @@
 				F99EB7F01EB050C600F299AE /* MyFavouriteSpot.xcdatamodeld in Sources */,
 				F99EB7EA1EB050C500F299AE /* ViewController.swift in Sources */,
 				F99EB7E81EB050C500F299AE /* AppDelegate.swift in Sources */,
+				F9A8BCAD1ECFC29F0091600E /* CoreDataManager.swift in Sources */,
 				F9CC88BD1EB5166500904772 /* SpotPin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

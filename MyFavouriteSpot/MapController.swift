@@ -9,6 +9,12 @@
 import UIKit
 import MapKit
 import CoreLocation
+import CoreData
+
+var gloSpotName = " "
+var gloLat = 0.00
+var gloLon = 0.00
+
 
 class MapController: UIViewController, CLLocationManagerDelegate {
     
@@ -17,25 +23,34 @@ class MapController: UIViewController, CLLocationManagerDelegate {
     var myLocation = CLLocationCoordinate2DMake(0.0,0.0);
     var name:String = " "
     
+    
     @IBAction func SaveSpot(_ sender: Any) {
+        //CoreDataManager.deleteAll()
         
         let alert = UIAlertController(title: "Let's Explore the World", message: "Enter Memory or Location Name", preferredStyle: UIAlertControllerStyle.alert) // create text alert
         alert.addTextField { (textField) in
              textField.text = "type something :)"
         }
    
-        self.present(alert, animated: true, completion: nil)   // Putting Pin to lat long
-
+        
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
             let textField = alert?.textFields![0]
             self.name = (textField?.text)!
+            gloSpotName = self.name
             print("Text field: \(String(describing: textField?.text))")
             let currentSpotPin: SpotPin = SpotPin(title:self.name, coordinate:self.myLocation)
             self.map.addAnnotation(currentSpotPin)
+            gloLat = self.myLocation.latitude
+            gloLon = self.myLocation.longitude
+            CoreDataManager.saveLocation()
+            
         }))
         
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler:nil))
-       
+        
+        self.present(alert, animated: true, completion: nil)   // Putting Pin to current location lat long
+        
+        // Saving location to the core Data so that we can retrieve it even after OS unloads app from memory
         
         
     }
@@ -70,7 +85,10 @@ class MapController: UIViewController, CLLocationManagerDelegate {
         
         
         
+        
     }
+    
+    
     
     
     
