@@ -9,6 +9,7 @@
 
 import UIKit
 import CoreData
+import MapKit
 
 class ListController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
@@ -37,4 +38,23 @@ class ListController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
 
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let r = res[indexPath.row]
+        print(" Name:", r.locName,"Latitude:", r.Latitude ,"Longitude:", r.Longitude);
+        let latitude:CLLocationDegrees = r.Latitude
+        let longitude:CLLocationDegrees =  r.Longitude
+        let regoinDistance: CLLocationDistance = 1000
+        let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
+        let regionSpan = MKCoordinateRegionMakeWithDistance(coordinates, regoinDistance, regoinDistance)
+        
+        let options = [MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center), MKLaunchOptionsMapSpanKey:NSValue(mkCoordinateSpan: regionSpan.span)]
+        let placemark = MKPlacemark (coordinate: coordinates)
+        let MapItem = MKMapItem(placemark: placemark)
+        MapItem.name = r.locName
+        MapItem.openInMaps(launchOptions: options)
+        
+    }
+
 }
